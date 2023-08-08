@@ -1,0 +1,12 @@
+<h1>Esto es index.handlebars</h1>
+
+<h1>Lista de Productos</h1>
+    <ul>
+        {{#each products}}
+            <li>{{this.product}} - Stock: {{this.stock}} - Precio: {{this.price}}</li>
+        {{/each}}
+    </ul>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="{{../public/js/index.js}}"></script>
